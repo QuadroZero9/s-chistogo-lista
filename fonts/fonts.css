@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "EB Garamond";
+  src: url("\Users\man35\Documents\s-chistogo-lista-review\fonts\ebgaramondregular.woff2")
+      format("woff2"),
+    url("\Users\man35\Documents\s-chistogo-lista-review\fonts\ebgaramondregular.wof")
+      format("woff"),
+    url("\Users\man35\Documents\s-chistogo-lista-review\fonts\ebgaramondregular.ttf")
+      format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  src: url("\Users\man35\Documents\s-chistogo-lista-review\fonts\ebgaramondmedium.woff2")
+      format("woff2"),
+    url("\Users\man35\Documents\s-chistogo-lista-review\fonts\ebgaramondmedium.woff")
+      format("woff"),
+    url("\Users\man35\Documents\s-chistogo-lista-review\fonts\ebgaramondmedium.ttf")
+      format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("\Users\man35\Documents\s-chistogo-lista-review\fonts\interregular.woff2")
+      format("woff2"),
+    url("\Users\man35\Documents\s-chistogo-lista-review\fonts\interregular.woff")
+      format("woff"),
+    url("\Users\man35\Documents\s-chistogo-lista-review\fonts\interregular.ttf")
+      format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("\Users\man35\Documents\s-chistogo-lista-review\fonts\interbold.woff2")
+      format("woff2"),
+    url("\Users\man35\Documents\s-chistogo-lista-review\fonts\interbold.woff")
+      format("woff"),
+    url("\Users\man35\Documents\s-chistogo-lista-review\fonts\interbold.ttf")
+      format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}

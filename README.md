@@ -1,1 +1,2 @@
-Создаём страницу на основе макета https://www.figma.com/design/BYCK9Jyvqrf2LM0CPbPMCZ/%231-%D0%A1-%D1%87%D0%B8%D1%81%D1%82%D0%BE%D0%B3%D0%BE-%D0%BB%D0%B8%D1%81%D1%82%D0%B0-(Copy)?node-id=0-1&p=f&t=8zuncCTD8l1don5M-0
+
+Верстаем одностраничный кейс "Страх чистого листа" на основе <a href="https://www.figma.com/file/vYJfYCZUddsUQUCYUktcID/%231-С-чистого-листа/duplicate?type=design&node-id=0-1&mode=design" target="_blank">готового макета</a>
