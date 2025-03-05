@@ -71,7 +71,6 @@ blockquote {
 
 .cover {
   background-image: url(../images/cover.svg);
-  /*Путь переписал. Получилось*/
   background-size: 94% auto;
   background-repeat: no-repeat;
   background-position: right;
