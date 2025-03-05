@@ -1,8 +1,7 @@
 body {
-  box-sizing: border-box;
   margin: 0;
-  background-color: #1e1e1e;
-  font-family: "Inter", sans-serif;
+  background: #1e1e1e;
+  font-family: Inter, sans-serif;
   font-weight: 400;
 }
 
@@ -22,51 +21,56 @@ blockquote {
 
 .content-section {
   box-sizing: border-box;
-  margin: auto;
-  width: 360px;
+  width: 100%;
+  max-width: 360px;
+  min-height: 100px;
+  margin: 0 auto;
 }
 
 .content-section_theme_dark {
-  background-color: #131313;
-  color: #f5f5f5;
+  background-color: black;
+  color: white;
 }
 
 .content-section_theme_bright {
   background-color: #fee42a;
-  color: var(--black-bg, #131313);
+  color: black;
 }
 
 .header {
+  padding: 24px 20px;
   display: flex;
   justify-content: space-between;
-  padding: 24px 20px;
+  align-items: flex-start;
+}
+
+.header__logo {
+  width: 78px;
+}
+
+.header__logo-image {
+  width: 100%;
 }
 
 .header__menu-list {
   display: flex;
   flex-direction: column;
-  row-gap: 12px;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
+  gap: 12px;
   list-style: none;
 }
 
-.header__menu-item {
-  text-decoration-line: underline;
+.header__menu-link {
   color: #f5f5f5;
+  font-size: 16px;
+  line-height: 1.2;
 }
 
-.header__menu-item_active {
-  text-decoration-line: none;
-  color: #f5f5f5;
+.header__menu-link {
+  text-decoration: underline;
 }
 
-.header__logo {
-  display: flex;
-  width: 78.45px;
-  height: 15.43px;
+.header__menu-item-active .header__menu-link {
+  text-decoration: none;
 }
 
 .cover {
@@ -77,23 +81,19 @@ blockquote {
   min-height: 198px;
 }
 
-.cover__title {
-  padding: 7px 24px 35px 20px;
-  display: block;
-  font-family: "EB Garamond", sans;
-  font-size: 72px;
-  font-style: normal;
+.cover-title {
+  font-family: "EB Garamond", serif;
   font-weight: 400;
-  line-height: 100%;
-  /* 72px */
+  color: #fff;
+  font-size: 72px;
 }
 
 .accent-span {
   display: block;
-}
-
-.text-left {
-  text-align: left;
+  font-weight: 500;
+  font-family: "EB Garmond", serif;
+  font-style: normal;
+  line-height: 115%;
 }
 
 .text-center {
@@ -105,84 +105,77 @@ blockquote {
 }
 
 .intro {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 37px;
+  padding: 30px 20px 38px;
+  line-height: 120%;
 }
 
 .intro__heading {
   display: flex;
+  justify-content: space-between;
+  color: #ccc;
+  margin-bottom: 24px;
 }
 
 .intro__title {
-  color: var(--text-gray, #ccc);
-  font-family: "Inter", sans-serif;
   font-size: 16px;
-  font-style: normal;
+  line-height: 1.2;
   font-weight: 400;
-  line-height: 120%;
 }
 
 .intro__date {
   white-space: nowrap;
-  color: var(--text-gray, #ccc);
-  font-family: "Inter", sans-serif;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 120%;
 }
 
 .intro__main-text {
-  padding-top: 24px;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 21.6px;
+  color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  line-height: 135%;
 }
 
 .reasons {
-  padding: 40px 20px 24px 20px;
-}
-
-.content-section__subtitle {
-  font-family: "EB Garamond", sans;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 115%;
+  padding: 40px 20px;
+  gap: 32px;
 }
 
 .content-section__introduction {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  font-family: "Inter", sans-serif;
   font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
+  margin: 32px 0;
+  line-height: 27px;
+}
+
+.content-section__introduction_dark {
+  font-size: 20px;
+  margin: 32px 0;
   line-height: 135%;
 }
 
 .content-section__list {
-  padding-left: 16px;
-}
-
-.content-section__list-item {
-  padding-bottom: 16px;
-  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 0 0 16px;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 21.6px;
 }
 
 .content-section__list-accent {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 21.6px;
+}
+
+.how-to {
+  padding: 40px 20px 60px;
+}
+
+.footer {
+  padding: 20px;
+}
+
+.content-section__subtitle_dark {
+  color: #f5f5f5;
 }
 
 .how-to {
@@ -255,6 +248,7 @@ blockquote {
   display: flex;
   border-top: 1px solid var(--yellow-bg, #fee42a);
   justify-content: space-between;
+  align-items: center;
 }
 
 .footer__copy {
