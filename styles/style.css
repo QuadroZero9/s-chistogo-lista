@@ -94,6 +94,7 @@ blockquote {
   font-family: "EB Garmond", serif;
   font-style: normal;
   line-height: 115%;
+  text-align: start;
 }
 
 .text-center {
@@ -102,12 +103,17 @@ blockquote {
 
 .text-right {
   text-align: right;
+  padding-right: 23px;
+  padding-bottom: 11px;
 }
 
 .intro {
+  display: flex;
+  flex-direction: column;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 37px;
+  gap: 24px;
 }
 
 .intro__heading {
@@ -134,20 +140,26 @@ blockquote {
 }
 
 .intro__main-text {
-  padding-top: 24px;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 21.6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
 }
 
 .reasons {
-  padding: 40px 20px 12px 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 26px 20px 40px 20px;
 }
 
 .content-section__subtitle {
-  font-family: "EB Garamond", sans;
+  font-family: "EB Garamond", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 500;
@@ -288,5 +300,3 @@ blockquote {
   font-weight: 400;
   line-height: 125%;
 }
-
-
